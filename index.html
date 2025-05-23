@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colectivo MIDI - Propuesta de Proyecto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+    <!-- <img src="MIDILOGO.png" alt="MIDI Power Logo" class="centered-logo"> -->
+
+    <div class="hero-canvas-container" id="heroCanvasContainer">
+    </div>
+
+    <nav class="main-nav" id="mainNav">
+        <div class="main-nav-header">
+            <div class="logo-placeholder-nav">
+                <img src="MIDILOGO.png" alt="MIDI Power Logo" class="">
+            </div>
+        </div>
+        <ul>
+            <li><a href="#hero" class="nav-link active">Inicio</a></li>
+            <li><a href="#abstract" class="nav-link">Abstract</a></li>
+            <li><a href="#motivacion" class="nav-link">Motivación</a></li>
+            <li><a href="#infraestructura" class="nav-link">Infraestructura</a></li>
+            <li>
+                <a href="#nuestra-propuesta" class="nav-link">Nuestra Propuesta</a>
+                <ul class="sub-menu">
+                     <li><a href="#nuestra-propuesta-resumen" class="nav-link">Resumen</a></li>
+                     <li><a href="#nuestra-propuesta-fortalezas" class="nav-link">Fortalezas</a></li>
+                     <li><a href="#nuestra-propuesta-desarrollo" class="nav-link">Áreas de Desarrollo</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#proyecto-detallado" class="nav-link">Proyecto Detallado</a>
+                 <ul class="sub-menu">
+                    <li><a href="#proyecto-concepto" class="nav-link">1. Concepto</a></li>
+                    <li><a href="#proyecto-foco" class="nav-link">2. Foco Residencia</a></li>
+                    <li><a href="#proyecto-metodologia" class="nav-link">3. Metodología</a></li>
+                    <li><a href="#proyecto-plan" class="nav-link">4. Plan y Calendario</li>
+                    <li><a href="#proyecto-presupuesto" class="nav-link">5. Presupuesto</a></li>
+                    <li><a href="#proyecto-resultados" class="nav-link">6. Resultados</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="page-content-wrapper">
+        <header id="hero" class="hero-section-wrapper">
+            <img src="MIDILOGO.png" alt="Colectivo MIDI Logo" class="hero-logo">
+        </header>
+
+        <main>
+            <section id="abstract" class="content-section-wrapper content-section">
+                <div class="container mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title-underline">Abstract <span class="text-sm font-normal">(Resumen en Inglés)</span></h2>
+                    <div class="custom-card p-6 md:p-8 rounded-xl">
+                        <p class="text-lg leading-relaxed" style="color:var(--text-light);">MIDI collective's immersive installation translates urban mobile data into sensory narratives. Fusing Buen Vivir/Lo-TEK with tech, it reveals city dynamics, fosters critical reflection on connectivity, and invites embodied awareness of our data footprint via mobile interaction.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="motivacion" class="content-section-wrapper content-section">
+                <div class="container mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title-underline">Motivación para la Residencia</h2>
+                    <div class="custom-card p-6 md:p-8 rounded-xl">
+                        <p class="leading-relaxed">La motivación del colectivo MIDI para esta residencia reside en la profunda resonancia entre nuestra práctica y la visión transdisciplinaria de Buen-TEK. Exploramos la intersección tecnología, sociedad y entorno, revelando narrativas ocultas en los sistemas que nos configuran. Trabajar con datos de movilidad urbana en Santiago ofrece un terreno fértil. Nos atrae el enfoque de la residencia en la tecnología móvil como agente transformador y la invitación a usar datos para abordar segregación y brechas digitales. Creemos que el arte inmersivo transforma estadísticas en experiencias humanas, fomentando comprensión empática. La integración del Buen Vivir y Lo-TEK es esencial; buscamos coexistencia armónica y sostenible, inspirada en saberes ancestrales. La UDD, con acceso a datos, especialistas y comunidades locales, es el entorno idóneo para materializar esta visión y contribuir al diálogo sobre futuros tecnológicos conscientes. Esta residencia potenciará nuestro crecimiento y generará una obra de impacto local y global.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="infraestructura" class="content-section-wrapper content-section">
+                <div class="container mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title-underline">Uso de Infraestructuras y Recursos</h2>
+                     <div class="custom-card p-6 md:p-8 rounded-xl">
+                        <p class="leading-relaxed">El desarrollo de la propuesta del colectivo MIDI se fundamenta en la utilización estratégica de las infraestructuras y recursos de la Universidad del Desarrollo, Twin de la residencia Señal & Flujo.</p>
+                        <p class="leading-relaxed mt-4">El recurso más crítico son los conjuntos de datos sobre movilidad, geoespacial, demografía y flujos de dispositivos móviles. Estos datos son la materia prima para construir la narrativa de la instalación. Requerimos acceso a ellos y apoyo técnico para su manejo inicial.</p>
+                        <p class="leading-relaxed mt-4">La colaboración con científicos de datos, urbanistas y especialistas en tecnología de la Universidad será invaluable. Su conocimiento guiará el análisis exploratorio, asegurando comprensión rigurosa de patrones e implicaciones socio-espaciales. Esta colaboración transdisciplinaria enriquecerá la conceptualización y diseño de algoritmos de traducción artística.</p>
+                        <p class="leading-relaxed mt-4">Anticipamos necesidad de acceso a laboratorios o espacios equipados para desarrollo técnico multimedia e interactivo. Necesitaremos equipos informáticos para análisis de big data y desarrollo de software, así como espacios para prototipado de componentes visuales, sonoros y lumínicos.</p>
+                        <h4 class="text-xl font-semibold mt-6 mb-3">Infraestructura clave incluye:</h4>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Capacidad de procesamiento robusta para análisis de datos.</li>
+                            <li>Entorno de desarrollo para software de traducción e interactividad (Processing, openFrameworks, Unity, web).</li>
+                            <li>Espacio y equipo para experimentar con proyecciones (visual/lumínica) y sonido multicanal.</li>
+                            <li>Área de trabajo para montaje y ajuste a pequeña escala.</li>
+                        </ul>
+                        <p class="leading-relaxed mt-4">El apoyo del personal técnico de la Universidad será fundamental para la integración y funcionamiento óptimo.</p>
+                        <p class="leading-relaxed mt-4">Espacios para encuentros y talleres con comunidades locales serán cruciales para incorporar perspectivas situadas y co-crear narrativas relevantes, anclando la obra en el contexto del territorio.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="nuestra-propuesta" class="content-section-wrapper">
+                <div class="container mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title-underline content-section">Nuestra Propuesta</h2>
+                    
+                    <div id="nuestra-propuesta-resumen" class="mb-12 content-section">
+                        <h3 class="text-2xl md:text-3xl font-semibold mb-4 accent-text-color">Resumen (Colectivo MIDI)</h3>
+                        <div class="custom-card p-6 md:p-8 rounded-xl">
+                            <p class="leading-relaxed">El colectivo MIDI propone la creación de una instalación inmersiva e interactiva que traduce datos masivos de movilidad urbana a experiencias sensoriales (visuales, sonoras, lumínicas). La obra busca explorar la profunda interconexión entre la vida urbana contemporánea, la tecnología móvil y los principios filosóficos del Buen Vivir y Lo-TEK. La interacción se articula a través del dispositivo móvil del visitante, cuyos datos de sensores modulan la atmósfera de la instalación en tiempo real. El objetivo central es revelar las capas ocultas de la ciudad mediadas por la tecnología, fomentar una conciencia crítica sobre nuestra relación con los datos y la tecnología, e invitar a una reflexión encarnada sobre la huella digital individual y colectiva.</p>
+                        </div>
+                    </div>
+
+                    <div id="nuestra-propuesta-fortalezas" class="mb-12 content-section">
+                        <h3 class="text-2xl md:text-3xl font-semibold mb-4 accent-text-color">Fortalezas</h3>
+                        <div class="custom-card p-6 md:p-8 rounded-xl">
+                            <ul class="space-y-3">
+                                <li><strong>Alineación Directa con el Foco de la Residencia:</strong> La propuesta aborda de manera explícita y central el impacto de la telefonía móvil en la vida urbana, la movilidad y la conectividad digital, utilizando como base los conjuntos de datos proporcionados por la Universidad del Desarrollo, Twin de la residencia.</li>
+                                <li><strong>Integración Profunda del Marco Conceptual Buen-TEK:</strong> La obra incorpora de forma intrínseca los principios del Buen Vivir y Lo-TEK en su narrativa, concepto y metodología, buscando una perspectiva crítica, arraigada localmente y respetuosa con la vida en todas sus formas.</li>
+                                <li><strong>Uso Innovador de Datos:</strong> La "traducción" artística de datos masivos no es una mera visualización, sino el núcleo técnico y narrativo que permite transformar información abstracta en una experiencia sensorial y significativa, alineándose con los recursos clave ofrecidos por la residencia.</li>
+                                <li><strong>Interactividad Significativa:</strong> La interacción a través del dispositivo móvil personal del visitante genera una conexión directa y reflexiva con la obra, fomentando la conciencia sobre la propia participación en la red de datos urbanos.</li>
+                                <li><strong>Experiencia Sensorial Potente:</strong> La concepción de una instalación inmersiva con proyecciones 360, control lumínico, sonido multicanal y la posible inclusión de elementos olfativos busca generar una experiencia estética y emocionalmente impactante.</li>
+                                <li><strong>Enfoque Transdisciplinario y Colaborativo:</strong> La metodología propuesta integra la colaboración activa con científicos de datos de la UDD, expertos translocales y, fundamentalmente, con las comunidades locales, enriqueciendo la obra con diversas perspectivas y saberes.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="nuestra-propuesta-desarrollo" class="content-section">
+                        <h3 class="text-2xl md:text-3xl font-semibold mb-4 accent-text-color">Áreas de Desarrollo</h3>
+                        <div class="custom-card p-6 md:p-8 rounded-xl">
+                            <ul class="space-y-3">
+                                <li><strong>Especificidad de la Traducción Algorítmica y Narrativa:</strong> Si bien se plantea la "traducción" y la "historia que los datos empiezan a contar", la propuesta se beneficiaría de una mayor especificación, aunque sea tentativa, sobre los tipos de algoritmos a explorar para la traducción artística y ejemplos concretos de cómo los patrones de datos podrían articularse en una narrativa específica conectada con el Buen Vivir y Lo-TEK.</li>
+                                <li><strong>Detalle Metodológico de la Integración Colaborativa:</strong> La metodología describe la colaboración, pero podría detallar más cómo se integrarán las perspectivas de expertos y comunidades en las decisiones *específicas* de diseño de la traducción artística y la construcción narrativa, más allá de la recopilación de información.</li>
+                                <li><strong>Clarificación del Impacto Social:</strong> Los resultados esperados son claros en cuanto a la instalación y documentación, pero podrían articular de forma más explícita cómo la obra busca generar un "impacto social" o contribuir al "debate público" de manera demostrable, más allá de invitar a la reflexión individual.</li>
+                                <li><strong>Alineación Específica del Presupuesto con la Experimentación:</strong> El desglose presupuestario es coherente, pero podría vincular de forma más directa los costos de investigación y producción con la experimentación específica requerida para la "traducción" de datos y la posible incorporación de elementos sensoriales menos convencionales como los olfativos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="proyecto-detallado" class="content-section-wrapper content-section">
+                <div class="container mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title-underline">Proyecto Detallado</h2>
+                    <div class="accordion-container space-y-px">
+                        </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer class="page-footer content-section">
+            <p>Colectivo MIDI &copy; <span id="currentYear"></span>. Un proyecto que explora las fronteras del arte, la tecnología y la conciencia social.</p>
+            <p class="fine-print mt-2">Inspirado en los principios del Buen Vivir y Lo-TEK.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="hero-sketch.js"></script>
+</body>
+</html>

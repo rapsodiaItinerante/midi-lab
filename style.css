@@ -1,0 +1,354 @@
+:root {
+    --bg-dark: #000000;
+    --text-light: #FFFFFF;
+    --text-dim: #A0A0A0;
+    --accent-color: #FFFFFF;
+    --card-bg: #0D0D0D;
+    --border-color: rgba(255, 255, 255, 0.2);
+    --shadow-color: rgba(255, 255, 255, 0.1);
+    --nav-width: 280px; /* Ancho de la navegación lateral */
+}
+
+.centered-logo {
+    position: absolute;
+    object-fit: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ensure the logo is always on top */
+    max-width: 300px; /* Limit the maximum width */
+    max-height: 400px; /* Limit the maximum height */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    overflow-x: hidden;
+    margin-left: 0; /* Ajuste para nav lateral */
+    transition: margin-left 0.3s ease;
+}
+    body.content-revealed-by-logo {
+        /* Reveal main navigation */
+        .main-nav {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(0);
+        }
+        /* Position content wrapper next to revealed navigation */
+        .page-content-wrapper {
+            margin-left: var(--nav-width);
+            width: calc(100% - var(--nav-width));
+             /* Keep background-color here for when logo toggle reveals */
+            background-color: rgba(0, 0, 0, -0.2); /* Example: 80% opaque black */
+        }
+    }
+
+.hero-canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -10; /* Detrás de todo, incluso del nav */
+}
+
+#p5HeroCanvas {
+    display: block;
+}
+
+/* Lateral Navigation */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--nav-width);
+    height: 100vh;
+    background-color: var(--bg-dark);
+    border-right: 1px solid var(--border-color);
+    padding: 2rem 1.5rem;
+    z-index: 100;
+    overflow-y: auto;
+    /* Initial state: hidden */
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-var(--nav-width)); /* Start off-screen */
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.main-nav.hover-revealed {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.main-nav-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.main-nav-header .logo-placeholder-nav {
+    width: 140px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+}
+.main-nav-header .logo-placeholder-nav img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+ .main-nav-header h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+ }
+
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.main-nav ul li a {
+    display: block;
+    color: var(--text-dim);
+    padding: 0.75rem 0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    position: relative;
+    border-left: 3px solid transparent;
+}
+.main-nav ul li a:hover {
+    color: var(--text-light);
+    padding-left: 0.5rem;
+}
+.main-nav ul li a.active {
+    color: var(--text-light);
+    font-weight: 700;
+    border-left-color: var(--accent-color);
+    padding-left: 0.5rem; /* Mismo padding que hover para consistencia */
+}
+.main-nav ul li .sub-menu {
+    padding-left: 1rem; /* Sangría para submenús */
+}
+ .main-nav ul li .sub-menu a {
+    font-size: 0.85rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+ }
+
+
+    .page-content-wrapper {
+        position: relative;
+        z-index: 1;
+        /* Initial state: full width when sidebar is hidden */
+        margin-left: 0;
+        width: 100%;
+        visibility: visible; /* Always visible in this approach */
+        opacity: 1; /* Always visible in this approach */
+        transition: margin-left 0.3s ease, width 0.3s ease; /* Only transition layout properties */
+    }
+
+    body.content-revealed-by-logo .page-content-wrapper {
+        /* Position content wrapper next to revealed navigation */
+        margin-left: var(--nav-width);
+        width: calc(100% - var(--nav-width));
+    }
+
+    /* Styles for when navigation is revealed by mouse hover */
+    body.nav-revealed-by-hover {
+        /* Position content wrapper next to revealed navigation */
+        .page-content-wrapper {
+            margin-left: var(--nav-width);
+            width: calc(100% - var(--nav-width));
+        }
+    }
+
+    /* .page-content-wrapper.visible is for scroll reveal, keep it */
+
+
+#hero { /* Style the hero section container */
+    height: 100vh; /* Make it full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text content if any */
+}
+
+.hero-logo { /* Style the logo image within the hero section */
+    display: block; /* Ensure it behaves as a block element */
+    max-width: 50%; /* Make it responsive */
+    max-height: 50%; /* Make it responsive */
+    object-fit: contain; /* Maintain aspect ratio */
+    /* Remove absolute positioning if it was inherited */
+    position: static; /* Or relative, depending on desired flow */
+    transform: none; /* Remove any inherited transforms */
+}
+
+/* Remove the old logo-placeholder styles as they are no longer needed */
+.logo-placeholder {
+    display: none;
+}
+
+.content-section-wrapper { /* Wrapper for each scrollable section */
+    padding: 4rem 2rem; /* Standard padding */
+    min-height: 80vh; /* Ensure sections take up space */
+}
+.content-section-wrapper:nth-child(odd) {
+    background-color: rgba(0, 0, 0, -0.2); /* Semi-transparent dark background */
+}
+ .content-section-wrapper:nth-child(even) {
+    background-color: rgba(3, 3, 3, -0.2); /* Slightly different semi-transparent black */
+}
+.hero-section-wrapper { /* Special wrapper for hero if needed, or just use hero-section directly */
+     padding: 0;
+     min-height: 100vh;
+     /* Removed background-color to allow background animation to show */
+}
+
+
+.content-section { /* Class for fade-in animation */
+    /* Initial state: hidden */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* Increased duration */
+}
+.content-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.custom-card {
+    background-color: rgba(13, 13, 13, 0.8); /* Semi-transparent card background */
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--text-light);
+}
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px var(--shadow-color);
+}
+.custom-card h3, .custom-card h4 {
+    color: var(--accent-color);
+}
+.custom-card p, .custom-card li {
+     color: var(--text-dim);
+}
+ .custom-card ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+ }
+
+.accent-text-color {
+    color: var(--accent-color);
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-dark);
+    transform: translateY(-2px);
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #050505; }
+::-webkit-scrollbar-thumb { background: var(--accent-color); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #E0E0E0; }
+
+.section-title-underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+.section-title-underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Alineado a la izquierda del título */
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+.numbered-circle-bg { background-color: var(--accent-color); }
+.numbered-circle-text { color: var(--bg-dark); }
+
+/* Accordion styles for "Proyecto Detallado" */
+.accordion-item {
+    border-bottom: 1px solid var(--border-color);
+}
+.accordion-item:last-child {
+    border-bottom: none;
+}
+.accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--text-light);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.accordion-button:hover {
+    background-color: var(--card-bg);
+}
+.accordion-button .icon {
+    transition: transform 0.3s ease;
+    font-size: 1.5rem;
+}
+.accordion-button[aria-expanded="true"] .icon {
+    transform: rotate(45deg);
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    padding: 0 1rem;
+    background-color: var(--card-bg); /* Fondo sutil para el contenido */
+}
+.accordion-content.open {
+    /* max-height will be set by JS */
+    padding: 1.5rem 1rem;
+}
+.accordion-content h3, .accordion-content h4 { margin-top: 1rem; margin-bottom: 0.5rem; color: var(--accent-color); }
+.accordion-content p, .accordion-content li { color: var(--text-dim); margin-bottom: 1rem; line-height: 1.7; }
+.accordion-content ul { list-style-type: disc; padding-left: 1.5rem; }
+.accordion-content strong { color: var(--text-light); }
+
+/* Footer specific styles */
+.page-footer {
+    border-top: 1px solid var(--border-color);
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--bg-dark);
+}
+.page-footer p {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+}
+ .page-footer p.fine-print {
+    font-size: 0.75rem;
+    opacity: 0.7;
+ }
