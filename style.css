@@ -164,12 +164,10 @@ body {
     }
 
     /* Styles for when navigation is revealed by mouse hover */
-    body.nav-revealed-by-hover {
+    body.nav-revealed-by-hover .page-content-wrapper {
         /* Position content wrapper next to revealed navigation */
-        .page-content-wrapper {
-            margin-left: var(--nav-width);
-            width: calc(100% - var(--nav-width));
-        }
+        margin-left: var(--nav-width);
+        width: calc(100% - var(--nav-width));
     }
 
     /* .page-content-wrapper.visible is for scroll reveal, keep it */
