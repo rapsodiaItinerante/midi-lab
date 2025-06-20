@@ -73,6 +73,73 @@ const accordionData = [
     }
 ];
 
+// Portfolio Data
+const portfolioData = [
+    {
+        title: "MIDI4all",
+        image: "imagesPortfolio/midilab1.jpg",
+        description: `
+            <p>Proyecto artístico audiovisual concebido como un espacio de experimentación contemporánea y creación multidisciplinaria. MIDI4all surge como una propuesta de búsqueda colaborativa dentro de nuestro colectivo MIDILab, con el objetivo de habilitar nuevas formas de expresión y encuentro entre diversas disciplinas artísticas.</p>
+            <p>La propuesta es de carácter abierto, orientada a artistas que encuentren en MIDI4all un espacio de participación activa y desarrollo colectivo. En cada presentación, los integrantes del proyecto realizamos una selección previa de piezas que sirven como punto de partida para la construcción de un paisaje sonoro en vivo. La experiencia combina sonido, visuales, pintura y otras expresiones, integrando dispositivos MIDI, instrumentos musicales y diversos softwares de producción y proyección audiovisual.</p>
+            <p>Proponemos sostener y expandir este espacio de intercambio con otros artistas, teniendo como eje principal la colaboración y la búsqueda de una expresión artística común, construida a partir de la improvisación individual como parte de un todo. Espacio de presentación: 990 Arte Club, Córdoba, Argentina</p>
+        `,
+        links: [
+            { text: "Instagram", url: "https://www.instagram.com/midi4all/" },
+            { text: "Google Drive", url: "https://drive.google.com/drive/folders/10SI2K8dsHT0i4MtASAAicAsaMGFGmgsi" }
+        ]
+    },
+    {
+        title: "“CELEBRACIÓN”",
+        image: "imagesPortfolio/OsvaldoPons.png",
+        description: `
+            <p>100 años de luz y forma de Osvaldo Pons. Exhibición temporal abierta al público que conserva, revaloriza, expone y difunde la obra del arquitecto y artista Osvaldo Pons. Toda su obra presente en formato documental, video arte 360, estaciones de realidad aumentada y, también, en documentación de archivo.</p>
+            <p>Participación como equipo encargado de la digitalización y preservación de bocetos, planos, documentación y registro fotográfico analógico capturado por el mismo. Éstos fueron utilizados en la producción documental y forman parte también de la exposición. Presentada en el Centro de Arte Contemporáneo Chateau Carreras - Antonio Seguí, Córdoba, Argentina. 12 de marzo al 8 de junio 2025</p>
+        `,
+        links: [
+            { text: "Diario Alfil", url: "https://diarioalfil.com.ar/contenido/12055/celebracion-100-anos-de-luz-y-forma-de-osvaldo-pons" },
+            { text: "Arq Pons", url: "https://arqpons.com.ar/index.html" },
+            { text: "Instagram", url: "https://www.instagram.com/arq.osvaldopons/?hl=es" }
+        ]
+    },
+    {
+        title: "COIL 2025 (México-Argentina)",
+        image: "imagesPortfolio/Coil.png",
+        description: `
+            <p>2025 – Collaborative Online International Learning (COIL). Departamento de Estudios Socioculturales del Instituto de Estudios Superiores de Occidente. México. FAD</p>
+            <p>A través de actividades diseñadas en conjunto por los profesores participantes, los estudiantes trabajamos en equipos internacionales, desarrollando competencias digitales, habilidades comunicativas y una comprensión más profunda de diversas perspectivas culturales. Esta experiencia enriquece el currículo académico al incorporar una dimensión global y promueve la formación de ciudadanos con conciencia intercultural y habilidades para desenvolverse en contextos internacionales.</p>
+            <p>Esta pieza surge de querer explorar los vínculos culturales entre México y Argentina por medio de una propuesta que habla de paisajes y animalidades, partiendo de lo cotidiano y expandiéndose a lo imaginario. Desde una realidad donde la globalización se ve atravesada por imágenes que han transformado nuestras formas de habitar el mundo y de vincularnos.</p>
+            <p>La pieza plantea un escenario donde la distancia física deja de ser un obstáculo para la creación colectiva. Entonces, desde este punto, construimos un espacio visual hecho de fragmentos que recopilamos de nuestro entorno para, con algo que ya existe, crear un nuevo espacio dandole una “nueva vida” a estos fragmentos a través de un montaje visual.</p>
+            <p>La obra presenta un video collage que está en constante transformación, donde cada segundo genera una imagen distinta y a través de este movimiento logra un espacio mutable en el que se cruza lo estático y lo dinámico, lo físico y lo simbólico, todo esto reunido en un solo lugar para representar la dualidad que hay entre tiempo-espacio, caos-orden. Este espacio imaginario que creamos no es una evasión de lo real, sino una recomposición de lo cotidiano, mostrando cómo, incluso en lo fragmentario, puede haber cohesión. El paisaje que se construye no existe en un sentido geográfico, sino como una posibilidad simbólica donde convergen distintas culturas, experiencias y memorias, convirtiéndolo en un espacio colectivo, construido desde las experiencias y lugares que nos conectan, que aunque todo esto este separado geográficamente, se enlazan a través del vínculo.</p>
+        `,
+        links: [
+            { text: "Google Drive", url: "https://drive.google.com/drive/u/0/folders/1lgtoiXZVOfy6V-HOkSPV4wWVczeOIglu" }
+        ]
+    },
+    {
+        title: "“MORPHEAS”",
+        image: "imagesPortfolio/Morpheas.png",
+        description: `
+            <p>Colectivo Desvariadas. Colectivo autogestivo conformado por artistas latinoamericanxs (Argentina, Colombia, Chile) formadxs en Universidades Públicas y Nacionales de Argentina desde Abril del año 2023. Hemos participado en festivales de Arte Independiente y Exposiciones de obras de Performance.</p>
+            <p>Actualmente, trabajamos mediante un proceso de laboratorio y exploración escénica que integra enfoques postdramáticos y performativos. Para ello, empleamos diversas técnicas como el Teatro Suzuki, la danza contemporánea y la performance artística, desarrollando un método propio de investigación escénica. Este proceso, que el grupo ha denominado "Metafísica de la Sombra", ha dado lugar a un entramado de recursos innovadores para la creación.</p>
+            <p>“MORPHEAS” – Fragmentos de un desvarío es una obra de teatro-instalación intervenida por diversos lenguajes artísticos: performance, videomapping, música y teatro. La pieza narra la historia de varias entidades delirantes, desbordadas y desenfrenadas, que habitan mundos oníricos llenos de metáforas. Envuelta en una atmósfera de ensueños y pesadillas, la obra entrelaza estas dimensiones para revelar los mundos internos de estas entidades, explorando sus ilusiones y, de manera más profunda, sus sombras. La obra se estructura en tres textos, ubicados en tres espacios instalativos diferentes. Cada momento contará con un entorno específico (site-specific), diseñado para reflejar un estado particular del sueño, lo que permitirá al público no solo observar, sino también tocar, oler y participar activamente en la construcción del significado de este desvarío.</p>
+        `,
+        links: [
+            { text: "YouTube", url: "https://www.youtube.com/watch?v=hbbilKXQe1s" }
+        ]
+    },
+    {
+        title: "“AUTODRAMA 2G”",
+        image: "imagesPortfolio/Autodrama 2g.jpg",
+        description: `
+            <p>“Réquiem para el Cabaret Voltaire” Festival de Performance. 9° Edición. 25 de octubre de 2024 - Bastón del Moro, Córdoba, Argentina</p>
+            <p>Performance transmedial y tecnopoética que explora las complejas relaciones entre el cuerpo, la medicación crónica y los procesos de diagnóstico. La obra integra imágenes, palabras, sonidos y movimientos en una narrativa hipertextual que combina poesía y tecnología, creando una experiencia estética híbrida. A través de la fusión de medios técnicos, la performance adquiere una materialidad específica, configurándose como un videoarte analógico que reflexiona sobre las tensiones entre el cuerpo biológico y su representación mediada. La obra ofrece una mirada crítica hacia estos procesos y sus efectos sobre la corporalidad, mientras la propia artista transita entre la fragilidad del cuerpo y la imposición de la medicalización permanente.</p>
+        `,
+        links: [
+            { text: "YouTube", url: "https://www.youtube.com/watch?v=S2hP9M7C_AM" }
+        ]
+    }
+];
+
 function renderAccordionItems() {
     const container = document.querySelector('.accordion-container');
     if (!container) return;
@@ -120,11 +187,136 @@ function renderAccordionItems() {
             }
         });
     });
+
+    // Flip card functionality
+    document.querySelectorAll('.flip-card').forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('flipped');
+        });
+    });
 }
+
+// Rolling Gallery and Dialog Functionality
+function renderPortfolioGallery() {
+    const galleryTrack = document.getElementById('portfolioGallery');
+    if (!galleryTrack) return;
+
+    const cylinderWidth = window.innerWidth <= 768 ? 1100 : 1800;
+    const faceCount = portfolioData.length;
+    const faceWidth = (cylinderWidth / faceCount) * 1.5;
+    const radius = cylinderWidth / (2 * Math.PI);
+
+    // Clear existing items before rendering
+    galleryTrack.innerHTML = '';
+
+    portfolioData.forEach((project, i) => {
+        const galleryItem = document.createElement('div');
+        galleryItem.classList.add('gallery-item');
+        galleryItem.dataset.index = i; // Store index to retrieve data later
+        
+        // Apply 3D transform
+        galleryItem.style.width = `${faceWidth}px`;
+        galleryItem.style.transform = `rotateY(${i * (360 / faceCount)}deg) translateZ(${radius}px)`;
+
+        galleryItem.innerHTML = `<img src="${project.image}" alt="${project.title}" class="gallery-img">`;
+        galleryTrack.appendChild(galleryItem);
+    });
+
+    // Manual drag and auto-roll functionality
+    let isDragging = false;
+    let startX;
+    let startRotation;
+    let currentRotation = 0; // Keep track of current rotation
+    let animationFrameId;
+    const autoRollSpeed = 0.03; // Adjusted for slower roll
+
+    function animateGallery() {
+        if (!isDragging) {
+            currentRotation -= autoRollSpeed;
+            galleryTrack.style.transform = `rotateY(${currentRotation}deg)`;
+        }
+        animationFrameId = requestAnimationFrame(animateGallery);
+    }
+
+    galleryTrack.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.clientX;
+        startRotation = currentRotation;
+        galleryTrack.style.cursor = 'grabbing';
+        cancelAnimationFrame(animationFrameId); // Pause auto-roll on drag start
+    });
+
+    galleryTrack.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        const dx = e.clientX - startX;
+        const dragFactor = 0.08; // Adjust sensitivity
+        currentRotation = startRotation + dx * dragFactor;
+        galleryTrack.style.transform = `rotateY(${currentRotation}deg)`;
+    });
+
+    galleryTrack.addEventListener('mouseup', () => {
+        isDragging = false;
+        galleryTrack.style.cursor = 'grab';
+        animationFrameId = requestAnimationFrame(animateGallery); // Resume auto-roll on drag end
+    });
+
+    galleryTrack.addEventListener('mouseleave', () => {
+        isDragging = false; // End drag if mouse leaves the element
+        galleryTrack.style.cursor = 'grab';
+        animationFrameId = requestAnimationFrame(animateGallery); // Resume auto-roll if mouse leaves while dragging
+    });
+
+    // Start the auto-roll animation
+    animateGallery();
+
+    // Dialog pop-up logic (retained from previous implementation)
+    galleryTrack.querySelectorAll('.gallery-item').forEach(item => {
+        item.addEventListener('click', (event) => {
+            const index = event.currentTarget.dataset.index;
+            const project = portfolioData[index];
+            
+            const dialogOverlay = document.getElementById('portfolioDialogOverlay');
+            const dialogTitle = document.getElementById('dialogTitle');
+            const dialogDescription = document.getElementById('dialogDescription');
+            const dialogLinks = document.getElementById('dialogLinks');
+
+            if (dialogTitle && dialogDescription && dialogLinks && dialogOverlay) {
+                dialogTitle.textContent = project.title;
+                dialogDescription.innerHTML = project.description; // Use innerHTML for paragraphs
+                dialogLinks.innerHTML = ''; // Clear previous links
+                project.links.forEach(link => {
+                    const a = document.createElement('a');
+                    a.href = link.url;
+                    a.textContent = link.text;
+                    a.target = "_blank"; // Open in new tab
+                    dialogLinks.appendChild(a);
+                });
+                dialogOverlay.classList.add('visible');
+            }
+        });
+    });
+
+    const dialogCloseButton = document.getElementById('dialogCloseButton');
+    const dialogOverlay = document.getElementById('portfolioDialogOverlay');
+
+    if (dialogCloseButton && dialogOverlay) {
+        dialogCloseButton.addEventListener('click', () => {
+            dialogOverlay.classList.remove('visible');
+        });
+        // Close dialog if clicking outside the content card
+        dialogOverlay.addEventListener('click', (event) => {
+            if (event.target === dialogOverlay) {
+                dialogOverlay.classList.remove('visible');
+            }
+        });
+    }
+}
+
 
 // Initial setup on DOMContentLoaded
 document.addEventListener('DOMContentLoaded', (event) => {
     renderAccordionItems();
+    renderPortfolioGallery(); // Render the new gallery
     // The p5 sketch initialization will be in hero-sketch.js
     // new p5(heroSketch); // This line is now in hero-sketch.js
 });

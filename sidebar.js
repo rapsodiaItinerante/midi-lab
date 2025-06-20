@@ -123,9 +123,11 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (currentSectionId.startsWith('proyecto-')) {
              // Check if it's one of the main sub-items
              const mainProjectSubItems = ['proyecto-concepto', 'proyecto-foco', 'proyecto-metodologia', 'proyecto-plan', 'proyecto-presupuesto', 'proyecto-resultados'];
-             if (!mainProjectSubItems.includes(document.querySelector('.page-content-wrapper section[id="' + currentSectionId + '"]').getAttribute('id'))) {
+             if (!mainProjectSubItems.includes(currentSectionId)) { // Simplified check
                 currentSectionId = 'proyecto-detallado';
              }
+        } else if (currentSectionId === 'about-us' || currentSectionId === 'portfolio' || currentSectionId === 'manifiesto') {
+            // No special handling needed, just ensure it's recognized
         }
 
 
