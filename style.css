@@ -328,7 +328,7 @@ body {
 }
 .accordion-content.open {
     /* max-height will be set by JS */
-    padding: 1.5rem 1rem;
+    /* padding: 1.5rem 1rem 3rem; extra bottom space */
 }
 .accordion-content h3, .accordion-content h4 { margin-top: 1rem; margin-bottom: 0.5rem; color: var(--accent-color); }
 .accordion-content p, .accordion-content li { color: var(--text-dim); margin-bottom: 1rem; line-height: 1.7; }

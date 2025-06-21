@@ -7,88 +7,134 @@ const accordionData = [
         id: "proyecto-concepto",
         title: "1. Descripción y Concepto del Proyecto",
         content: `
-            <p>El colectivo MidiLab propone una instalación inmersiva e interactiva que trasciende la mera observación para convertirse en una experiencia vivida. Fusionamos arte y técnica para escrutar un fenómeno omnipresente: la interconexión entre la urbe, los dispositivos móviles y las sabidurías ancestrales del Buen Vivir y Lo-TEK. Concebimos un entorno envolvente donde los datos, que a menudo percibimos como entidades frías y abstractas, se transmutan en sensaciones tangibles: luces que danzan, sonidos que revelan secretos de la movilidad, ecos de espacios habitados pero rara vez percibidos en su totalidad.</p>
-            <p>El núcleo conceptual y técnico de esta obra reside en la "traducción". Tomamos vastos conjuntos de datos – patrones de movilidad, información geoespacial, estadísticas demográficas, flujos de datos de dispositivos móviles – y los convertimos en lenguajes artísticos. Mediante algoritmos (aún en desarrollo), estos datos narrarán una historia emergente, intrínsecamente ligada a los patrones y análisis que revelan. Esta narrativa, arraigada en las perspectivas socioeconómicas y sociodemográficas inherentes a los datos, se entrelazará con los principios del Buen Vivir y Lo-TEK, integrando una cosmología que prioriza la armonía con la naturaleza y la comunidad, y valora las tecnologías resilientes nacidas del conocimiento tradicional. No aspiramos a una simple visualización de datos; buscamos una obra que incite a la reflexión crítica: ¿cómo reconfiguran nuestros dispositivos la ciudad y nuestra existencia en ella? ¿Existen modos de relación con la tecnología que nos arraiguen en lugar de alienarnos, que sean más justos y conscientes del entorno y de las voces ancestrales?</p>
-            <p>La interacción, catalizador del diálogo entre la obra y el visitante, se articula a través del dispositivo móvil personal. Mediante una aplicación accesible vía código QR al inicio de la instalación, los datos de los sensores del dispositivo del visitante se compartirán y procesarán en tiempo real. Una inteligencia artificial modulará la atmósfera de la instalación en respuesta a estos datos, creando un espejo sensible que refleja la huella digital y física del individuo en el espacio y el tiempo. La instalación se convierte así en un organismo reactivo, un diálogo constante entre la data masiva preexistente y la presencia singular del visitante.</p>
-            <p>La materialización de esta visión se proyecta en proyecciones visuales de 360 grados que abrazan al espectador, luces que pulsan al ritmo de los datos como venas luminosas de la ciudad, and un paisaje sonoro multicanal que sumerge al visitante en las estructuras subyacentes de los datos. La posible inclusión de elementos olfativos añadiría una capa sinestésica, profundizando la conexión visceral with la narrativa emergente and los principios del Buen Vivir and Lo-TEK.</p>
+            <p>MIDI LAB propone una instalación inmersiva e interactiva que fusiona arte y técnica para explorar la interconexión entre la ciudad, los dispositivos móviles y las sabidurías ancestrales del Buen Vivir y Lo-TEK en el contexto de la ciudad de Fortaleza. Traducimos datos urbanos y de dispositivos de Fortaleza y los transformamos en experiencias sensoriales (luces, sonidos, visuales) para reflexionar sobre cómo se relaciona la tecnología con el espacio que habitamos y nuestro entorno local.</p>
+            <p>El núcleo de la obra es la <strong>traducción</strong> de datos a lenguajes artísticos, entrelazando la narrativa emergente con los principios del Buen Vivir y Lo-TEK. La interacción se realiza a través del dispositivo móvil del visitante, modulando la instalación en tiempo real y creando un espejo sensible de su huella digital y física.</p>
+            <p>La materialización incluye proyecciones 360°, luces y sonido multicanal, con posible inclusión de elementos olfativos. La instalación se convierte así en un organismo reactivo: un diálogo constante entre la data masiva preexistente y la presencia singular del visitante.</p>
         `
     },
     {
         id: "proyecto-foco",
         title: "2. Cómo la propuesta aborda el foco de la residencia",
         content: `
-            <p>La propuesta del colectivo MidiLab se alinea de manera intrínseca with el foco de la residencia "Señal & Flujo". La residencia investiga cómo los teléfonos móviles reconfiguran la vida urbana, la movilidad, la migración and la conectividad. Nuestra instalación se sitúa precisamente en esta intersección, utilizando los conjuntos de datos sobre movilidad, información geoespacial and demográfica proporcionados por la Universidad del Desarrollo como cimiento material and conceptual.</p>
-            <p>La "traducción" artística de estos datos busca iluminar los entramados invisibles que configuran nuestros desplazamientos, interacciones and la ocupación del espacio urbano. Es un acto de revelación, de hacer perceptible la compleja red que subyace a la vida en la ciudad contemporánea.</p>
-            <p>Al transformar datos abstractos en una experiencia sensorial inmersiva, la instalación hace tangibles los conceptos centrales de la residencia. ¿Cómo influye el dispositivo móvil en el espacio físico que transitamos? ¿De qué manera se manifiestan las redes digitales en el tejido urbano? La interacción, modulada por los datos del propio visitante, genera una conciencia encarnada sobre la huella digital individual and su impacto en la colectividad urbana. Es una invitación a experimentar, desde el cuerpo, la densidad de esta red.</p>
-            <p>Además, la obra busca visibilizar las dinámicas urbanas menos evidentes que los datos pueden revelar: la segregación, los cambios demográficos, las fronteras invisibles mediadas por la tecnología. La traducción artística de estos patrones ofrece una perspectiva complementaria a la investigación científica, una mirada que apela a lo emocional and intuitivo.</p>
-            <p>La integración del Buen Vivir and Lo-TEK no es un mero complemento, sino un anclaje fundamental que dota a la propuesta de una perspectiva crítica and situada en el contexto sudamericano. Nos impulsa a trascender el análisis puramente tecnológico para cuestionar, desde nuestros saberes and territorios, cómo podemos coexistir with la tecnología de forma más armónica and sostenible, valorando las historias and prácticas arraigadas que buscan la equidad entre todos los seres, humanos and no humanos. Es un compromiso with una visión de la tecnología que sirve a la vida en su sentido más amplio.</p>
+            <p>MIDI LAB aborda el foco "Signal &amp; Flow: Mobility Data Shaping Urban Life" utilizando datos de movilidad, migración y conectividad digital de la ciudad de Fortaleza. Exploramos el impacto de la tecnología móvil desde una perspectiva situada que considera las particularidades de este territorio: sus dinámicas migratorias, la riqueza cultural afrodescendiente e indígena y los contrastes socioeconómicos urbanos.</p>
+            <p>La traducción de datos inspirada en el concepto Buen-TEK evidencia un uso crítico y arraigado de la tecnología. La interactividad móvil fomenta la conciencia sobre la huella digital y reflexiona sobre la responsabilidad en el ecosistema digital urbano. Al transformar datos abstractos en experiencia sensorial inmersiva, la instalación materializa preguntas centrales: ¿Cómo moldea la migración interna los flujos urbanos de Fortaleza? ¿De qué manera las redes digitales reflejan las desigualdades sociales del territorio?</p>
+            <p>La interacción, modulada por los datos del propio visitante, genera una conciencia encarnada sobre la huella digital individual y su impacto en la colectividad urbana. Invitamos a experimentar ‑desde el cuerpo- la densidad de esta red en el contexto de una metrópolis costera que concentra las contradicciones del desarrollo brasileño.</p>
+            <p>Nos impulsa a trascender el análisis puramente tecnológico para cuestionar, desde los saberes locales y territorios nordestinos, cómo coexistir con la tecnología de forma más armónica y sostenible, valorando historias y prácticas arraigadas que buscan la equidad entre todos los seres. Es un compromiso con una visión de la tecnología que sirva a la vida en su sentido más amplio.</p>
         `
     },
     {
         id: "proyecto-metodologia",
         title: "3. Metodología",
         content: `
-            <h4>3. ENFOQUE METODOLÓGICO</h4>
-            <p>Nuestro proceso es orgánico y transdisciplinario: un tejido donde se entrelazan investigación rigurosa de datos, experimentación artística, desarrollo tecnológico y colaboración activa con expertos y comunidades. No es un camino lineal, sino un ciclo iterativo de descubrimiento, creación y ajuste.</p>
-            <h5>3.1. Inmersión en el Ecosistema de Datos</h5>
-            <p>Análisis inicial de datos de movilidad, migración y conectividad digital de Fortaleza. Colaboramos con científicos de datos de la Universidad de Fortaleza para identificar patrones relevantes que dialoguen con las realidades vividas del territorio.</p>
-            <h5>3.2. Diálogo de Saberes y Co-creación</h5>
-            <p>Realizamos talleres y encuentros con comunidades locales, afrodescendientes e indígenas para compartir hallazgos y escuchar experiencias sobre movilidad y conectividad urbana. Estas narrativas orales y mapas cognitivos enriquecen la información cuantitativa.</p>
-            <h5>3.3. Alquimia de la Traducción</h5>
-            <p>Exploramos algoritmos que transformen patrones de datos en visuales dinámicos, paisajes sonoros envolventes y secuencias lumínicas. Prototipamos rápidamente para testear la potencia poética de cada traducción.</p>
-            <h5>3.4. Construcción de la Narrativa Polifónica</h5>
-            <p>Entrelazamos los hallazgos de datos con los principios del Buen Vivir y Lo-TEK para tejer una historia crítica sobre tecnología, vida urbana y saberes ancestrales.</p>
-            <h5>3.5. Desarrollo Técnico</h5>
-            <p>Programamos el software de traducción y control, diseñamos hardware de proyección, sonido multicanal y la app móvil interactiva, en un proceso iterativo de construcción y prueba.</p>
-            <h5>3.6. Montaje, Calibración y Exhibición</h5>
-            <p>Montamos la instalación, calibramos sistemas visuales, sonoros y lumínicos y realizamos pruebas exhaustivas para asegurar una experiencia inmersiva y fluida para el público.</p>
+            <p>El enfoque metodológico para esta residencia se concibe como un proceso orgánico y transdisciplinario, un tejido donde se entrelazan la investigación rigurosa de datos, la experimentación artística, el desarrollo tecnológico y la colaboración activa con expertos y comunidades. No es un camino lineal, sino un ciclo iterativo de descubrimiento, creación y ajuste.</p>
+            <h5>3.1&nbsp;Inmersión en el Ecosistema de Datos</h5>
+            <p>Análisis inicial de datos de movilidad, migración y conectividad digital de Fortaleza, colaborando con científicos de datos de la Universidad de Fortaleza para identificar patrones relevantes. Abordamos desde una perspectiva situada que comprende cómo los datos reflejan las realidades vividas, las desigualdades regionales y los flujos migratorios característicos del territorio.</p>
+            <h5>3.2&nbsp;Diálogo de Saberes y Co-creación</h5>
+            <p>Talleres y encuentros con comunidades locales para compartir hallazgos y escuchar experiencias sobre movilidad, conectividad y uso del espacio urbano. Incorporamos narrativas orales, mapas cognitivos y tradiciones afrobrasileñas e indígenas para enriquecer la información cuantitativa y co-crear las narrativas de la instalación.</p>
+            <h5>3.3&nbsp;Alquimia de la Traducción</h5>
+            <p>En paralelo al análisis, exploramos la traducción de datos a lenguajes sensoriales. Experimentamos con algoritmos y lógicas que transforman patrones en visuales dinámicos, paisajes sonoros envolventes y secuencias lumínicas significativas, buscando que los datos dialoguen con los principios del Buen Vivir y Lo-TEK. Prototipamos rápidamente para testear la efectividad artística.</p>
+            <h5>3.4&nbsp;Construcción de la Narrativa Polifónica</h5>
+            <p>Entrelazamos hallazgos de datos y saberes locales para construir una narrativa crítica sobre tecnología, vida urbana y sabidurías ancestrales, articulando conceptos como interconexión, sostenibilidad, segregación y resiliencia.</p>
+            <h5>3.5&nbsp;Desarrollo Técnico</h5>
+            <p>Programamos el software de traducción y control, diseñamos hardware de proyección visual y lumínica, el sistema de sonido multicanal y la app móvil interactiva. Integramos y probamos cada componente iterativamente con apoyo técnico de la Universidad.</p>
+            <h5>3.6&nbsp;Montaje, Calibración y Exhibición</h5>
+            <p>Montamos la instalación en el espacio expositivo, calibramos sistemas visuales, sonoros y lumínicos y realizamos pruebas exhaustivas para garantizar una experiencia inmersiva fluida antes de la apertura al público.</p>
         `
     },
     {
         id: "proyecto-plan",
-        title: "4. Plan and calendario de trabajo tentativo",
+        title: "4. Plan y calendario de trabajo tentativo",
         content: `
-            <p>El colectivo MidiLab concibe los cinco meses de residencia (septiembre 2025 - febrero 2026) como un período intensivo de investigación, creación and colaboración. Este plan tentativo es una hoja de ruta flexible, susceptible de ajustarse a los ritmos inherentes al proceso creativo and a las dinámicas de la colaboración transdisciplinaria. La estancia presencial en la Universidad del Desarrollo, de al menos cuatro semanas, se proyecta idealmente al inicio para maximizar la inmersión en el contexto local and la interacción with los recursos and expertos.</p>
-            <h4>Mes 1 (Septiembre 2025): Inmersión and Conceptualización Inicial.</h4>
-            <ul><li>Reunión de alineación with el Twin and Liaison Mediator: Definición de objetivos, flujo de trabajo, calendario and detalles de la estancia presencial.</li><li>Inicio de la estancia presencial en Santiago (idealmente).</li><li>Inmersión en los conjuntos de datos: Análisis exploratorio inicial with el apoyo de científicos de datos de la UDD.</li><li>Investigación teórica and artística: Profundización en el marco Buen-TEK, data art, visualización/sonificación de datos, Buen Vivir and Lo-TEK en el contexto chileno.</li><li>Sesiones de brainstorming and conceptualización: Desarrollo de ideas iniciales para la traducción artística and la narrativa.</li></ul>
-            <h4>Mes 2 (Octubre 2025): Análisis de Datos and Prototipado Artístico.</h4>
-            <ul><li>Continuación del análisis de datos: Identificación de patrones and narrativas clave.</li><li>Experimentación with algoritmos de traducción: Desarrollo de prototipos iniciales de visualización, sonificación and control lumínico basados en datos.</li><li>Desarrollo temprano de la aplicación móvil interactiva.</li><li>Posibles encuentros iniciales with comunidades locales.</li></ul>
-            <h4>Mes 3 (Noviembre 2025): Desarrollo Técnico and Colaboración Intensiva.</h4>
-            <ul><li>Desarrollo avanzado del software de traducción and control.</li><li>Diseño and construcción del hardware de la instalación (proyecciones, luces, sonido).</li><li>Talleres and sesiones de co-creación with comunidades locales: Integración de sus perspectivas en la narrativa and el diseño.</li><li>Colaboración estrecha with expertos translocales and personal técnico de la UDD.</li><li>Pruebas de integración de componentes.</li></ul>
-            <h4>Mes 4 (Diciembre 2025): Integración Narrativa and Prototipos a Escala.</h4>
-            <ul><li>Integración de la narrativa del Buen Vivir/Lo-TEK with los patrones de datos.</li><li>Desarrollo final de la aplicación móvil.</li><li>Montaje de prototipos a escala reducida para testear la experiencia inmersiva and interactiva.</li><li>Ajustes basados in pruebas and feedback.</li><li>Inicio de la documentación detallada del proceso.</li></ul>
-            <h4>Mes 5 (Enero - Febrero 2026): Montaje Final, Calibración and Exhibición.</h4>
-            <ul><li>Montaje completo de la instalación en el espacio de exhibición.</li><li>Calibración de todos los sistemas (visual, sonoro, lumínico, interactividad).</li><li>Pruebas finales and ajustes estéticos.</li><li>Entrega del resultado final and la documentación completa del proyecto.</li><li>Participación en eventos de difusión and exhibición organizados por el programa Buen-TEK.</li></ul>
-            <p><strong>Este cronograma es una guía. La flexibilidad para adaptarse a los descubrimientos and desafíos que surjan será fundamental para el éxito del proyecto.</strong></p>
+            <p>El plan de trabajo se estructura en <strong>5 meses</strong>, de septiembre de 2025 a febrero de 2026, con un enfoque flexible y adaptativo que prioriza la colaboración y la iteración. Incluye una <strong>estancia presencial mínima de 4&nbsp;semanas</strong> en la Universidad de Fortaleza, programada para las fases de mayor co-creación y prototipado.</p>
+
+            <h4>Mes&nbsp;1 (Septiembre&nbsp;2025): Inmersión y Diálogo Inicial</h4>
+            <ul>
+                <li>Reunión de alineación con Twin y Liaison Mediator&nbsp;– objetivos, calendario y detalles logísticos.</li>
+                <li>Inmersión en los conjuntos de datos de Fortaleza y documentación del contexto urbano.</li>
+                <li>Investigación teórica y artística sobre Buen-TEK, data-art y saberes locales afro-indígenas.</li>
+                <li>Planificación de talleres y encuentros comunitarios.</li>
+                <li>Sesiones de <em>brainstorming</em> y conceptualización para la traducción artística y la narrativa.</li>
+            </ul>
+
+            <h4>Mes&nbsp;2 (Octubre&nbsp;2025): Análisis de Datos y Primeros Diálogos Comunitarios &nbsp;<span class="text-sm">(Estancia presencial)</span></h4>
+            <ul>
+                <li>Estancia presencial de 4&nbsp;semanas en Fortaleza.</li>
+                <li>Análisis exploratorio de datos con apoyo de científicos de Unifor.</li>
+                <li>Primeros encuentros con comunidades locales; escucha de perspectivas sobre tecnología y territorio.</li>
+                <li>Talleres intensivos de co-creación con comunidades afrodescendientes e indígenas.</li>
+                <li>Diseño conceptual de la traducción de datos y narrativa artística.</li>
+            </ul>
+
+            <h4>Mes&nbsp;3 (Noviembre&nbsp;2025): Desarrollo Participativo y Prototipado</h4>
+            <ul>
+                <li>Profundización del análisis de datos; identificación de patrones y narrativas clave.</li>
+                <li>Prototipos iniciales de visualización, sonificación y control lumínico.</li>
+                <li>Desarrollo temprano de la aplicación móvil interactiva.</li>
+                <li>Prototipado técnico integrando retroalimentación comunitaria y materiales locales.</li>
+                <li>Colaboración estrecha con especialistas de Unifor en aspectos técnicos y conceptuales.</li>
+            </ul>
+
+            <h4>Mes&nbsp;4 (Diciembre&nbsp;2025): Refinamiento y Narrativas Arraigadas</h4>
+            <ul>
+                <li>Refinamiento de algoritmos de traducción y dinámicas de interactividad.</li>
+                <li>Desarrollo final de la aplicación móvil.</li>
+                <li>Integración profunda de narrativas co-creadas y principios Buen Vivir / Lo-TEK.</li>
+                <li>Montaje de prototipos a escala para testear la experiencia inmersiva.</li>
+                <li>Documentación del proceso con énfasis en aprendizajes transdisciplinarios.</li>
+            </ul>
+
+            <h4>Mes&nbsp;5 (Enero–Febrero&nbsp;2026): Montaje, Presentación y Cierre</h4>
+            <ul>
+                <li>Montaje completo de la instalación en el espacio de exhibición.</li>
+                <li>Ajustes técnicos y artísticos basados en pruebas in-situ.</li>
+                <li>Presentación pública de la instalación con participación de comunidades colaboradoras.</li>
+                <li>Entrega de la documentación final y archivos del proceso.</li>
+                <li>Participación en eventos de difusión y festivales regionales.</li>
+            </ul>
+
+            <p class="mt-4"><em>Este calendario es una guía flexible que se adaptará para maximizar la colaboración y asegurar que la obra resuene con el contexto local.</em></p>
         `
     },
     {
         id: "proyecto-presupuesto",
         title: "5. Desglose tentativo del presupuesto",
         content: `
-            <p>El colectivo MidiLab estima un presupuesto total de 20.000 EUR para la realización de la residencia, concebido como una suma global ("lump sum") para cubrir todos los aspectos del proyecto. La distribución tentativa de estos fondos, sujeta a ajustes según las necesidades específicas que surjan durante la residencia, es la siguiente:</p>
+            <p>Estimamos un presupuesto total de <strong>20.000&nbsp;EUR</strong> para la realización de la residencia, concebido como una suma global (<em>lump&nbsp;sum</em>) que cubre todos los aspectos del proyecto. Su distribución tentativa, sujeta a ajustes según necesidades específicas, es la siguiente:</p>
             <ul>
-                <li><strong>Honorarios del colectivo MidiLab:</strong> 7.000 EUR. Este monto representa el 35% del total de la beca, cumpliendo with el mínimo requerido para los honorarios artísticos.</li>
-                <li><strong>Gastos de viaje and manutención:</strong> 6.000 EUR. Incluye los costos de vuelos internacionales de ida and vuelta para los miembros del colectivo, así como los gastos de manutención durante la estancia presencial en Santiago (más allá del alojamiento cubierto por la UDD) and posibles viajes locales relacionados with la investigación or la colaboración comunitaria.</li>
-                <li><strong>Costos de investigación and producción:</strong> 5.500 EUR. Destinados a la adquisición de materiales and componentes electrónicos para prototipos and la instalación final, alquiler de equipos técnicos específicos no disponibles en la UDD (si fuera necesario), licencias de software (si aplica) and otros gastos directos asociados al desarrollo técnico and artístico de la obra.</li>
-                <li><strong>Contingencia:</strong> 500 EUR. Un fondo reservado para cubrir imprevistos or necesidades no contempladas inicialmente.</li>
+                <li><strong>Honorarios del Colectivo MIDI&nbsp;LAB – 7.000&nbsp;EUR</strong><br/>Representa el 35&nbsp;% del total de la beca, cumpliendo con el mínimo requerido para honorarios artísticos.</li>
+                <li><strong>Gastos de Viaje y Manutención – 6.000&nbsp;EUR</strong><br/>Vuelos internacionales ida-vuelta para los integrantes y manutención durante la estancia presencial en Fortaleza (más allá del alojamiento cubierto por Unifor) más posibles desplazamientos locales vinculados a investigación y colaboración comunitaria.</li>
+                <li><strong>Costos de Investigación y Producción – 5.500&nbsp;EUR</strong><br/>Adquisición de materiales y componentes electrónicos para prototipos e instalación final, alquiler de equipos técnicos específicos no disponibles en Unifor, licencias de software y otros gastos directos de desarrollo técnico y artístico.</li>
+                <li><strong>Documentación y Difusión – 1.000&nbsp;EUR</strong><br/>Registro audiovisual/fotográfico del proceso y la instalación, diseño de materiales de difusión y posibles gastos para participar en eventos de exhibición no cubiertos por la organización anfitriona.</li>
+                <li><strong>Contingencia – 500&nbsp;EUR</strong><br/>Fondo reservado para imprevistos o necesidades no contempladas inicialmente.</li>
             </ul>
-            <p><strong>Total estimado:</strong> 20.000 EUR.</p>
-            <p>Este desglose es una estimación inicial. La gestión de la suma global permitirá al colectivo asignar los fondos de manera flexible para optimizar la calidad artística and técnica de la instalación, así como la profundidad de la investigación and la colaboración comunitaria.</p>
+            <p>Este desglose es una estimación inicial. La gestión flexible de la suma global permitirá al colectivo asignar recursos de forma óptima para garantizar la calidad artística y técnica de la instalación y profundizar la investigación y colaboración comunitaria.</p>
         `
     },
     {
         id: "proyecto-resultados",
-        title: "6. Resultados esperados",
+        title: "6. Resultados Esperados",
         content: `
-            <p>El colectivo MIDI proyecta una serie de resultados tangibles and intangibles derivados de esta residencia, todos orientados a materializar la visión del proyecto and contribuir a los objetivos del programa Buen-TEK.</p>
-            <h4>6.1. Instalación Artística Inmersiva and Interactiva (Prototipo Avanzado) / Instalación Operativa:</h4><p>El resultado tangible principal será un prototipo avanzado funcional and, finalmente, la instalación artística en sí misma, completamente desarrollada, montada and funcional. Demostrará la traducción de datos a lenguajes sensoriales and la interactividad móvil, incorporando elementos Lo-TEK and narrativas co-creadas, lista para ser experimentada por el público.</p>
-            <h4>6.2. Cuerpo de Investigación and Documentación Conceptual:</h4><p>Se generará un conjunto de textos, ensayos and presentaciones que documenten el proceso de investigación, el marco conceptual, la metodología de traducción de datos, la integración del Buen Vivir and Lo-TEK, and las reflexiones críticas. Servirá para compartir conocimiento and fomentar diálogo transdisciplinario.</p>
-            <h4>6.3. Archivo Completo del Proceso:</h4><p>Se compilará un archivo exhaustivo (fotos, videos, diarios, bocetos, diagramas, descripciones técnicas) que documente todas las etapas: investigación, análisis de datos, prototipado, desarrollo técnico, talleres comunitarios, montaje and exhibición.</p>
-            <h4>6.4. Fortalecimiento de Redes and Colaboraciones:</h4><p>Un resultado intangible de gran valor será el establecimiento and fortalecimiento de lazos with científicos de datos and especialistas de la UDD, expertos translocales, otros artistas and comunidades locales. Se espera que estas conexiones perduren.</p>
-            <h4>6.5. Participación en Eventos de Difusión and Exhibición:</h4><p>El colectivo se compromete a presentar la instalación and resultados en eventos organizados por Buen-TEK, en Chile and otros contextos, para alcanzar un público amplio and dar visibilidad al programa.</p>
-            <h4>6.6. Contribución al Programa de Aprendizaje and la Comunidad Buen-TEK:</h4><p>Participaremos activamente en el Programa de Aprendizaje and actividades de la comunidad Buen-TEK, compartiendo experiencias and aprendizajes, buscando contribuir al intercambio de conocimientos and fortalecimiento de la red.</p>
-            <p><strong>Estos resultados, tanto artefactos materiales como procesos de conocimiento and conexión, buscan generar un impacto significativo en el cruce entre arte, ciencia, tecnología and sociedad, alineándose with la visión transformadora de Buen-TEK.</strong></p>
+            <p>El colectivo MIDI&nbsp;LAB proyecta una serie de resultados tangibles e intangibles derivados de esta residencia, todos orientados a materializar la visión del proyecto y contribuir a los objetivos del programa Buen-TEK.</p>
+
+            <h4>6.1&nbsp;Instalación Artística Inmersiva e Interactiva (Prototipo Avanzado)</h4>
+            <p>El resultado tangible principal será un prototipo avanzado de la instalación inmersiva e interactiva. Aunque el alcance final dependerá de los recursos de producción disponibles, se prevé una instalación completamente desarrollada, montada y funcional en el espacio de exhibición y lista para su presentación pública.</p>
+
+            <h4>6.2&nbsp;Cuerpo de Investigación y Documentación Conceptual</h4>
+            <p>Se generará un conjunto de textos, ensayos y presentaciones que documenten el proceso de investigación, el marco conceptual de la obra, la metodología de traducción de datos a lenguajes artísticos y las reflexiones críticas surgidas durante la residencia. Este material fomentará el diálogo transdisciplinario y compartirá el conocimiento creado.</p>
+
+            <h4>6.3&nbsp;Archivo Completo del Proceso</h4>
+            <p>Se compilará un archivo exhaustivo que documente visual y textualmente todas las etapas de la residencia: investigación inicial, análisis de datos, prototipado, talleres comunitarios, montaje y exhibición. Incluirá fotografías, videos, diarios de campo, bocetos, diagramas y descripciones técnicas.</p>
+
+            <h4>6.4&nbsp;Fortalecimiento de Redes y Colaboraciones</h4>
+            <p>Un resultado intangible pero valioso será el establecimiento y fortalecimiento de lazos con los científicos de datos y especialistas de la Universidad de Fortaleza, otros artistas residentes y, fundamentalmente, con las comunidades locales participantes. Se espera que estas conexiones generen futuros proyectos conjuntos.</p>
+
+            <h4>6.5&nbsp;Participación en Eventos de Difusión y Exhibición</h4>
+            <p>El colectivo se compromete a presentar la instalación y compartir los resultados de la investigación en los eventos de difusión y exhibición organizados por Buen-TEK, así como en otros contextos que puedan surgir, maximizando el alcance del proyecto.</p>
+
+            <h4>6.6&nbsp;Contribución al Programa de Aprendizaje y la Comunidad Buen-TEK</h4>
+            <p>Participaremos activamente en el Programa de Aprendizaje y otras actividades de la comunidad Buen-TEK, compartiendo experiencias, aprendizajes y desafíos para fortalecer la red de artistas, investigadores y organizaciones vinculadas.</p>
+
+            <p>En conjunto, estos resultados —desde los artefactos materiales hasta los procesos de conocimiento y conexión— buscan generar un impacto significativo en el cruce entre arte, ciencia, tecnología y sociedad, alineándose con la visión transformadora de Buen-TEK.</p>
         `
     }
 ];
@@ -172,7 +218,7 @@ function renderAccordionItems() {
                 <span class="icon">+</span>
             </button>
             <div id="content-${item.id}" class="accordion-content" aria-hidden="true">
-                <div class="p-4">${item.content}</div>
+                <div class="p-0">${item.content}</div>
             </div>
         `;
         container.appendChild(accordionItem);
