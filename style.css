@@ -493,84 +493,70 @@ body {
 }
 
 /* Rolling Gallery Styles */
-.gallery-container {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  overflow: hidden;
+.rolling-gallery-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: var(--accent-color) #050505; /* Firefox */
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
-.gallery-gradient {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 48px;
-  z-index: 10;
+.rolling-gallery-container::-webkit-scrollbar {
+    height: 8px;
 }
 
-.gallery-gradient-left {
-  left: 0;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, #060010 100%);
+.rolling-gallery-container::-webkit-scrollbar-track {
+    background: #050505;
 }
 
-.gallery-gradient-right {
-  right: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #060010 100%);
+.rolling-gallery-container::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 10px;
 }
 
-.gallery-content {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  perspective: 1000px;
-  transform-style: preserve-3d;
-}
-
-.gallery-track {
-  display: flex;
-  height: auto;
-  min-height: 200px;
-  justify-content: center;
-  align-items: center;
-  cursor: grab;
-  transform-style: preserve-3d;
-  width: 100%;
+.rolling-gallery-container::-webkit-scrollbar-thumb:hover {
+    background: #E0E0E0;
 }
 
 .gallery-item {
-  position: absolute;
-  display: flex;
-  height: fit-content;
-  align-items: center;
-  justify-content: center;
-  padding: 8%;
-  backface-visibility: hidden;
-}
-
-.gallery-img {
-  pointer-events: none;
-  height: 250px; /* Increased height */
-  width: 450px; /* Increased width */
-  border-radius: 15px;
-  border: 3px solid #fff;
-  object-fit: cover;
-  transition: 0.3s ease;
-}
-
-.gallery-item:hover .gallery-img {
-  transform: scale(1.05);
-  transition: 0.3s ease;
+    flex-shrink: 0; /* Prevent items from shrinking */
+    width: 280px; /* Fixed width for each item */
+    height: 200px; /* Fixed height */
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-color);
 }
 
 @media (max-width: 768px) {
-  .gallery-item {
-    padding: 6%;
-  }
-  .gallery-img {
-    height: 100px;
-    width: 220px;
-  }
+    .gallery-item {
+        width: 180px;
+        height: 130px;
+    }
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px var(--shadow-color);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area, crop if necessary */
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .gallery-img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /* Dialog Styles */
@@ -685,3 +671,82 @@ body {
         font-size: 0.9rem;
     }
 }
+
+/* ==========================
+   Modern Portfolio Gallery
+   ========================== */
+
+/* Wrapper that holds gradients + scrollable content */
+.gallery-container {
+    position: relative;
+    margin: 2rem 0;
+}
+
+/* Scrollable area */
+.gallery-content {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth; /* smooth drag / wheel */
+    scroll-snap-type: x mandatory; /* make items snap */
+    -webkit-overflow-scrolling: touch; /* iOS momentum */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: var(--accent-color) #050505; /* Firefox */
+}
+
+.gallery-content::-webkit-scrollbar {
+    height: 8px;
+}
+.gallery-content::-webkit-scrollbar-track {
+    background: #050505;
+}
+.gallery-content::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 10px;
+}
+.gallery-content::-webkit-scrollbar-thumb:hover {
+    background: #E0E0E0;
+}
+
+/* Track that receives flex children (gallery items) */
+.gallery-track {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+/* Subtle fade on the sides so items feel "infinite" */
+.gallery-gradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    pointer-events: none; /* don't block scroll */
+    z-index: 2;
+}
+.gallery-gradient-left {
+    left: 0;
+    background: linear-gradient(to right, var(--bg-dark) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.gallery-gradient-right {
+    right: 0;
+    background: linear-gradient(to left, var(--bg-dark) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Ensure each gallery item snaps cleanly */
+.gallery-item {
+    scroll-snap-align: start;
+}
+
+@media (max-width: 768px) {
+    .gallery-gradient {
+        width: 60px;
+    }
+    .gallery-track {
+        gap: 1rem;
+    }
+}
+
+/* ==========================
+   End Modern Portfolio Gallery
+   ========================== */

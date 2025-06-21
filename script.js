@@ -196,85 +196,26 @@ function renderAccordionItems() {
     });
 }
 
-// Rolling Gallery and Dialog Functionality
 function renderPortfolioGallery() {
-    const galleryTrack = document.getElementById('portfolioGallery');
-    if (!galleryTrack) return;
-
-    const cylinderWidth = window.innerWidth <= 768 ? 1100 : 1800;
-    const faceCount = portfolioData.length;
-    const faceWidth = (cylinderWidth / faceCount) * 1.5;
-    const radius = cylinderWidth / (2 * Math.PI);
+    const galleryContainer = document.getElementById('portfolioGallery');
+    if (!galleryContainer) return;
 
     // Clear existing items before rendering
-    galleryTrack.innerHTML = '';
+    galleryContainer.innerHTML = '';
 
-    portfolioData.forEach((project, i) => {
+    portfolioData.forEach(function(project, index) {
         const galleryItem = document.createElement('div');
         galleryItem.classList.add('gallery-item');
-        galleryItem.dataset.index = i; // Store index to retrieve data later
-        
-        // Apply 3D transform
-        galleryItem.style.width = `${faceWidth}px`;
-        galleryItem.style.transform = `rotateY(${i * (360 / faceCount)}deg) translateZ(${radius}px)`;
-
+        galleryItem.dataset.index = index;
         galleryItem.innerHTML = `<img src="${project.image}" alt="${project.title}" class="gallery-img">`;
-        galleryTrack.appendChild(galleryItem);
+        galleryContainer.appendChild(galleryItem);
     });
 
-    // Manual drag and auto-roll functionality
-    let isDragging = false;
-    let startX;
-    let startRotation;
-    let currentRotation = 0; // Keep track of current rotation
-    let animationFrameId;
-    const autoRollSpeed = 0.03; // Adjusted for slower roll
-
-    function animateGallery() {
-        if (!isDragging) {
-            currentRotation -= autoRollSpeed;
-            galleryTrack.style.transform = `rotateY(${currentRotation}deg)`;
-        }
-        animationFrameId = requestAnimationFrame(animateGallery);
-    }
-
-    galleryTrack.addEventListener('mousedown', (e) => {
-        isDragging = true;
-        startX = e.clientX;
-        startRotation = currentRotation;
-        galleryTrack.style.cursor = 'grabbing';
-        cancelAnimationFrame(animationFrameId); // Pause auto-roll on drag start
-    });
-
-    galleryTrack.addEventListener('mousemove', (e) => {
-        if (!isDragging) return;
-        const dx = e.clientX - startX;
-        const dragFactor = 0.08; // Adjust sensitivity
-        currentRotation = startRotation + dx * dragFactor;
-        galleryTrack.style.transform = `rotateY(${currentRotation}deg)`;
-    });
-
-    galleryTrack.addEventListener('mouseup', () => {
-        isDragging = false;
-        galleryTrack.style.cursor = 'grab';
-        animationFrameId = requestAnimationFrame(animateGallery); // Resume auto-roll on drag end
-    });
-
-    galleryTrack.addEventListener('mouseleave', () => {
-        isDragging = false; // End drag if mouse leaves the element
-        galleryTrack.style.cursor = 'grab';
-        animationFrameId = requestAnimationFrame(animateGallery); // Resume auto-roll if mouse leaves while dragging
-    });
-
-    // Start the auto-roll animation
-    animateGallery();
-
-    // Dialog pop-up logic (retained from previous implementation)
-    galleryTrack.querySelectorAll('.gallery-item').forEach(item => {
-        item.addEventListener('click', (event) => {
+    galleryContainer.querySelectorAll('.gallery-item').forEach(function(item) {
+        item.addEventListener('click', function(event) {
             const index = event.currentTarget.dataset.index;
             const project = portfolioData[index];
-            
+
             const dialogOverlay = document.getElementById('portfolioDialogOverlay');
             const dialogTitle = document.getElementById('dialogTitle');
             const dialogDescription = document.getElementById('dialogDescription');
@@ -282,13 +223,13 @@ function renderPortfolioGallery() {
 
             if (dialogTitle && dialogDescription && dialogLinks && dialogOverlay) {
                 dialogTitle.textContent = project.title;
-                dialogDescription.innerHTML = project.description; // Use innerHTML for paragraphs
-                dialogLinks.innerHTML = ''; // Clear previous links
-                project.links.forEach(link => {
+                dialogDescription.innerHTML = project.description;
+                dialogLinks.innerHTML = '';
+                project.links.forEach(function(link) {
                     const a = document.createElement('a');
                     a.href = link.url;
                     a.textContent = link.text;
-                    a.target = "_blank"; // Open in new tab
+                    a.target = "_blank";
                     dialogLinks.appendChild(a);
                 });
                 dialogOverlay.classList.add('visible');
@@ -300,11 +241,11 @@ function renderPortfolioGallery() {
     const dialogOverlay = document.getElementById('portfolioDialogOverlay');
 
     if (dialogCloseButton && dialogOverlay) {
-        dialogCloseButton.addEventListener('click', () => {
+        dialogCloseButton.addEventListener('click', function() {
             dialogOverlay.classList.remove('visible');
         });
-        // Close dialog if clicking outside the content card
-        dialogOverlay.addEventListener('click', (event) => {
+
+        dialogOverlay.addEventListener('click', function(event) {
             if (event.target === dialogOverlay) {
                 dialogOverlay.classList.remove('visible');
             }
