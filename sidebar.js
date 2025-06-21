@@ -120,12 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Special handling for nested sections under "Nuestra Propuesta" and "Proyecto Detallado"
         if (currentSectionId.startsWith('nuestra-propuesta-')) {
              currentSectionId = 'nuestra-propuesta';
-        } else if (currentSectionId.startsWith('proyecto-')) {
-             // Check if it's one of the main sub-items
-             const mainProjectSubItems = ['proyecto-concepto', 'proyecto-foco', 'proyecto-metodologia', 'proyecto-plan', 'proyecto-presupuesto', 'proyecto-resultados'];
-             if (!mainProjectSubItems.includes(currentSectionId)) { // Simplified check
-                currentSectionId = 'proyecto-detallado';
-             }
         } else if (currentSectionId === 'about-us' || currentSectionId === 'portfolio' || currentSectionId === 'manifiesto') {
             // No special handling needed, just ensure it's recognized
         }

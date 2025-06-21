@@ -25,6 +25,26 @@ const accordionData = [
         `
     },
     {
+        id: "proyecto-metodologia",
+        title: "3. Metodología",
+        content: `
+            <h4>3. ENFOQUE METODOLÓGICO</h4>
+            <p>Nuestro proceso es orgánico y transdisciplinario: un tejido donde se entrelazan investigación rigurosa de datos, experimentación artística, desarrollo tecnológico y colaboración activa con expertos y comunidades. No es un camino lineal, sino un ciclo iterativo de descubrimiento, creación y ajuste.</p>
+            <h5>3.1. Inmersión en el Ecosistema de Datos</h5>
+            <p>Análisis inicial de datos de movilidad, migración y conectividad digital de Fortaleza. Colaboramos con científicos de datos de la Universidad de Fortaleza para identificar patrones relevantes que dialoguen con las realidades vividas del territorio.</p>
+            <h5>3.2. Diálogo de Saberes y Co-creación</h5>
+            <p>Realizamos talleres y encuentros con comunidades locales, afrodescendientes e indígenas para compartir hallazgos y escuchar experiencias sobre movilidad y conectividad urbana. Estas narrativas orales y mapas cognitivos enriquecen la información cuantitativa.</p>
+            <h5>3.3. Alquimia de la Traducción</h5>
+            <p>Exploramos algoritmos que transformen patrones de datos en visuales dinámicos, paisajes sonoros envolventes y secuencias lumínicas. Prototipamos rápidamente para testear la potencia poética de cada traducción.</p>
+            <h5>3.4. Construcción de la Narrativa Polifónica</h5>
+            <p>Entrelazamos los hallazgos de datos con los principios del Buen Vivir y Lo-TEK para tejer una historia crítica sobre tecnología, vida urbana y saberes ancestrales.</p>
+            <h5>3.5. Desarrollo Técnico</h5>
+            <p>Programamos el software de traducción y control, diseñamos hardware de proyección, sonido multicanal y la app móvil interactiva, en un proceso iterativo de construcción y prueba.</p>
+            <h5>3.6. Montaje, Calibración y Exhibición</h5>
+            <p>Montamos la instalación, calibramos sistemas visuales, sonoros y lumínicos y realizamos pruebas exhaustivas para asegurar una experiencia inmersiva y fluida para el público.</p>
+        `
+    },
+    {
         id: "proyecto-plan",
         title: "4. Plan and calendario de trabajo tentativo",
         content: `
@@ -108,7 +128,7 @@ const portfolioData = [
             <p>2025 – Collaborative Online International Learning (COIL). Departamento de Estudios Socioculturales del Instituto de Estudios Superiores de Occidente. México. FAD</p>
             <p>A través de actividades diseñadas en conjunto por los profesores participantes, los estudiantes trabajamos en equipos internacionales, desarrollando competencias digitales, habilidades comunicativas y una comprensión más profunda de diversas perspectivas culturales. Esta experiencia enriquece el currículo académico al incorporar una dimensión global y promueve la formación de ciudadanos con conciencia intercultural y habilidades para desenvolverse en contextos internacionales.</p>
             <p>Esta pieza surge de querer explorar los vínculos culturales entre México y Argentina por medio de una propuesta que habla de paisajes y animalidades, partiendo de lo cotidiano y expandiéndose a lo imaginario. Desde una realidad donde la globalización se ve atravesada por imágenes que han transformado nuestras formas de habitar el mundo y de vincularnos.</p>
-            <p>La pieza plantea un escenario donde la distancia física deja de ser un obstáculo para la creación colectiva. Entonces, desde este punto, construimos un espacio visual hecho de fragmentos que recopilamos de nuestro entorno para, con algo que ya existe, crear un nuevo espacio dandole una “nueva vida” a estos fragmentos a través de un montaje visual.</p>
+            <p>La pieza plantea un escenario donde la distancia física deja de ser un obstáculo para la creación colectiva. Entonces, desde este punto, construimos un espacio visual hecho de fragmentos que recopilamos de nuestro entorno para, con algo que ya existe, crear un nuevo espacio dandole una "nueva vida" a estos fragmentos a través de un montaje visual.</p>
             <p>La obra presenta un video collage que está en constante transformación, donde cada segundo genera una imagen distinta y a través de este movimiento logra un espacio mutable en el que se cruza lo estático y lo dinámico, lo físico y lo simbólico, todo esto reunido en un solo lugar para representar la dualidad que hay entre tiempo-espacio, caos-orden. Este espacio imaginario que creamos no es una evasión de lo real, sino una recomposición de lo cotidiano, mostrando cómo, incluso en lo fragmentario, puede haber cohesión. El paisaje que se construye no existe en un sentido geográfico, sino como una posibilidad simbólica donde convergen distintas culturas, experiencias y memorias, convirtiéndolo en un espacio colectivo, construido desde las experiencias y lugares que nos conectan, que aunque todo esto este separado geográficamente, se enlazan a través del vínculo.</p>
         `,
         links: [
@@ -121,7 +141,7 @@ const portfolioData = [
         description: `
             <p>Colectivo Desvariadas. Colectivo autogestivo conformado por artistas latinoamericanxs (Argentina, Colombia, Chile) formadxs en Universidades Públicas y Nacionales de Argentina desde Abril del año 2023. Hemos participado en festivales de Arte Independiente y Exposiciones de obras de Performance.</p>
             <p>Actualmente, trabajamos mediante un proceso de laboratorio y exploración escénica que integra enfoques postdramáticos y performativos. Para ello, empleamos diversas técnicas como el Teatro Suzuki, la danza contemporánea y la performance artística, desarrollando un método propio de investigación escénica. Este proceso, que el grupo ha denominado "Metafísica de la Sombra", ha dado lugar a un entramado de recursos innovadores para la creación.</p>
-            <p>“MORPHEAS” – Fragmentos de un desvarío es una obra de teatro-instalación intervenida por diversos lenguajes artísticos: performance, videomapping, música y teatro. La pieza narra la historia de varias entidades delirantes, desbordadas y desenfrenadas, que habitan mundos oníricos llenos de metáforas. Envuelta en una atmósfera de ensueños y pesadillas, la obra entrelaza estas dimensiones para revelar los mundos internos de estas entidades, explorando sus ilusiones y, de manera más profunda, sus sombras. La obra se estructura en tres textos, ubicados en tres espacios instalativos diferentes. Cada momento contará con un entorno específico (site-specific), diseñado para reflejar un estado particular del sueño, lo que permitirá al público no solo observar, sino también tocar, oler y participar activamente en la construcción del significado de este desvarío.</p>
+            <p>"MORPHEAS" – Fragmentos de un desvarío es una obra de teatro-instalación intervenida por diversos lenguajes artísticos: performance, videomapping, música y teatro. La pieza narra la historia de varias entidades delirantes, desbordadas y desenfrenadas, que habitan mundos oníricos llenos de metáforas. Envuelta en una atmósfera de ensueños y pesadillas, la obra entrelaza estas dimensiones para revelar los mundos internos de estas entidades, explorando sus ilusiones y, de manera más profunda, sus sombras. La obra se estructura en tres textos, ubicados en tres espacios instalativos diferentes. Cada momento contará con un entorno específico (site-specific), diseñado para reflejar un estado particular del sueño, lo que permitirá al público no solo observar, sino también tocar, oler y participar activamente en la construcción del significado de este desvarío.</p>
         `,
         links: [
             { text: "YouTube", url: "https://www.youtube.com/watch?v=hbbilKXQe1s" }
@@ -131,7 +151,7 @@ const portfolioData = [
         title: "“AUTODRAMA 2G”",
         image: "imagesPortfolio/Autodrama 2g.jpg",
         description: `
-            <p>“Réquiem para el Cabaret Voltaire” Festival de Performance. 9° Edición. 25 de octubre de 2024 - Bastón del Moro, Córdoba, Argentina</p>
+            <p>"Réquiem para el Cabaret Voltaire" Festival de Performance. 9° Edición. 25 de octubre de 2024 - Bastón del Moro, Córdoba, Argentina</p>
             <p>Performance transmedial y tecnopoética que explora las complejas relaciones entre el cuerpo, la medicación crónica y los procesos de diagnóstico. La obra integra imágenes, palabras, sonidos y movimientos en una narrativa hipertextual que combina poesía y tecnología, creando una experiencia estética híbrida. A través de la fusión de medios técnicos, la performance adquiere una materialidad específica, configurándose como un videoarte analógico que reflexiona sobre las tensiones entre el cuerpo biológico y su representación mediada. La obra ofrece una mirada crítica hacia estos procesos y sus efectos sobre la corporalidad, mientras la propia artista transita entre la fragilidad del cuerpo y la imposición de la medicalización permanente.</p>
         `,
         links: [
