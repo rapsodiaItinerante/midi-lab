@@ -324,6 +324,26 @@ function renderPortfolioGallery() {
 document.addEventListener('DOMContentLoaded', (event) => {
     renderAccordionItems();
     renderPortfolioGallery(); // Render the new gallery
+
+    /* --- Reposicionar Manifiesto al final --- */
+    const manifiestoSection = document.getElementById('manifiesto');
+    if (manifiestoSection) {
+        const mainEl = manifiestoSection.closest('main');
+        if (mainEl) {
+            mainEl.appendChild(manifiestoSection); // lo envía al final del flujo de secciones
+        }
+    }
+
+    /* Mover enlace Manifiesto al final del menú lateral */
+    const manifiestoLink = document.querySelector('nav.main-nav a[href="#manifiesto"]');
+    if (manifiestoLink) {
+        const li = manifiestoLink.parentElement;
+        const navUl = manifiestoLink.closest('nav').querySelector(':scope > ul');
+        if (li && navUl) {
+            navUl.appendChild(li); // lo coloca como último elemento principal
+        }
+    }
+
     // The p5 sketch initialization will be in hero-sketch.js
     // new p5(heroSketch); // This line is now in hero-sketch.js
 });
